@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+.heading {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-size: 100px;
+    border: 0px;
+    margin-top: 200px;
+    margin-bottom: 400px;
+    margin: white;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.heading .subheading {
+    font-family: "Teko", sans-serif;
+    font-size: 30px;
+    text-shadow: none;
+}
+
+.container {
+    color: white;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.container h1 {
+    margin-left: 100px;
+    font-size: 50px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+}
+
+.container::before {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    top: 30%;
+    right: 7%;
+}
+
+.container .box {
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 25px;
+    height: 320px;
+    padding: 3rem;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.074);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    transition: all ease 0.3s;
+}
+
+.container .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .box .title {
+    font-family: "Fira Sans", sans-serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.container .box div p {
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 300;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.container .box div span:nth-child(3) {
+    font-weight: 500;
+    margin-right: 0.2rem;
+}
+
+.container .box:hover {
+    box-shadow: 0px 0px 20px 1px rgba(0, 254, 255, 255);
+    border: 1px solid rgba(0, 254, 255, 255);
+}
+
+.card-holder {
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+    left: 0;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    background: #1619b0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.card::before,
+.card::after {
+    position: absolute;
+    color: black;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #08fefe;
+    transition: all 0.3s;
+}
+
+.card::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100% 0 15px;
+}
+
+.card:hover::before,
+.card:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+#cA.card:hover:after {
+    content: "MediBlock uses a decentralized storage solution to safeguard its data";
+}
+
+#cB.card:hover:after {
+    content: "MediBlock protects sensitive data of patients using AMAZING blockchain tech";
+}
+
+#cC.card:hover:after {
+    content: "MediBlock makes use of smart contracts to ensure no data disarray occurs"
+}
+
+#cD.card:hover:after {
+    content: "MediBlock ensures that you and your doctor are on the same page";
+}
+
+.video-background video {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.video-background {
+    height: 100px;
+    background: linear-gradient(0, 0, 0, 0.5);
+}
+
+#features {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    color: aliceblue;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background: #202124;
+    margin-top: 50px;
+    height: 45px;
+}
+
+.footer h1 {
+    font-family: "Fira Sans", sans-serif;
+    color: aliceblue;
+    margin: 10px;
+}
+
+.card2 {
+    width: 100%;
+    max-width: 500px;
+    height: 180px;
+    background: #353535;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    backdrop-filter: blur(10px);
+    transition: 0.5s ease-in-out;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card2:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.num {
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    border-radius: 100%;
+    text-align: center;
+    background: #1619b0;
+}
+
+.num h1 {
+    font-family: "Fira Sans", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.card2:hover>.img {
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(#9198e5, #712020);
+}
+
+.textBox {
+    width: calc(100% - 90px);
+    margin-left: 10px;
+    color: white;
+    font-family: 'Poppins' sans-serif;
+}
+
+.textContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h1 {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.p {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.howholder h1 {
+    font-size: 50px;
+    font-family: "Fira Sans", sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.num h1 {
+    margin: 8px;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+#cardleft {
+    margin-left: 300px;
+}
+
+#cardright {
+    margin-left: 850px;
+}
+
+.link {
+    width: 15em;
+    height: 2.1em;
+    margin-top: 5px;
+    margin-right: 8px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 18px;
+    font-weight: 250;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+

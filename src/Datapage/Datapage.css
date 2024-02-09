@@ -1,0 +1,13 @@
+
+.btn2 {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.btn2 button {
+    margin-top: 30px;
+    background: white;
+    border-radius: 10px;
+    width: 100px;
+}

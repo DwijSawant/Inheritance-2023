@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
+.Navbar {
+  font-family: "Fira Sans", sans-serif;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.Navbar>.nav-logo {
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 6px;
+  margin-left: 15px;
+  color: #ffffff;
+}
+
+.Navbar>.nav-items> {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 20px;
+  position: relative;
+  opacity: 0.9;
+}
+
+@media (max-width: 700px) {
+  .Navbar>.nav-items {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: #3b4da7;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+  }
+}
+
+.btn {
+  width: 8.5em;
+  height: 2.1em;
+  margin-top: 5px;
+  margin-right: 8px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: black;
+}
+
+.btn:after {
+  content: "";
+  background: white;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.btn:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
