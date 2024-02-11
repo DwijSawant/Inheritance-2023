@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap');
+.btn2{
+    font-family: "Fira Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+.btn2 button{
+    background: white;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background: #202124;
+    margin-top: 50px;
+    height: 45px;
+}
+
+.footer h1 {
+    font-family: "Fira Sans", sans-serif;
+    color: aliceblue;
+    margin: 10px;
+}

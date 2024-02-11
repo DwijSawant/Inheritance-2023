@@ -3,6 +3,7 @@
 .Navbar {
   font-family: "Fira Sans", sans-serif;
   height: 60px;
+  width: 1260px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,8 +15,8 @@
 .Navbar>.nav-logo {
   font-weight: 700;
   font-size: 25px;
-  margin-top: 6px;
-  margin-left: 15px;
+  margin-top: 5px;
+  margin-left: -539px;
   color: #ffffff;
 }
 
@@ -81,3 +82,7 @@
   transition: all 0.5s;
 }
 
+.Navbar img {
+  width: 30px;
+  margin-left: 10px;
+}

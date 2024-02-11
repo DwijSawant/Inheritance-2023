@@ -74,15 +74,7 @@
     font-family: "Fira Sans", sans-serif;
 }
 
-.container .box div span:nth-child(3) {
-    font-weight: 500;
-    margin-right: 0.2rem;
-}
 
-.container .box:hover {
-    box-shadow: 0px 0px 20px 1px rgba(0, 254, 255, 255);
-    border: 1px solid rgba(0, 254, 255, 255);
-}
 
 .card-holder {
     display: flex;
@@ -225,7 +217,6 @@
 .num h1 {
     font-family: "Fira Sans", sans-serif;
     color: white;
-    text-align: center;
 }
 
 .card2:hover>.img {
@@ -267,7 +258,7 @@
 }
 
 .num h1 {
-    margin: 8px;
+    margin-top: 12px;
     font-family: "Fira Sans", sans-serif;
     font-size: 25px;
     font-weight: 200;
@@ -278,7 +269,7 @@
 }
 
 #cardright {
-    margin-left: 850px;
+    margin-left: 754px;
 }
 
 .link {
@@ -297,12 +288,3 @@
     z-index: 1;
     overflow: hidden;
 }
-
-
-
-
-
-
-
-
-

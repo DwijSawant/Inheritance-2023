@@ -1,11 +1,10 @@
 import Navbar from "../Navbar/Navbar";
 import './Homepage.css';
 import medbackvid from "../assets/medbackvid.mp4";
-
 const HomePage = () => {
     return (
         <div>
-            <Navbar />
+            <Navbar/>
             <div>
                 <div className='video-background'>
                     <video src={medbackvid} autoPlay loop muted />

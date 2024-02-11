@@ -1,14 +1,17 @@
 import './App.css';
-import Datapage from './Datapage/Datapage';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import HomePage from './Homepage/Homepage';
+import Loginpage from './Loginpage/Loginpage';
+import Upload from "./Datapage/Datapage";
+
 function App() {
   return (
-    <div className='App'>
+    <div className='App'class = 'someName custom-scrollbar' >
       <BrowserRouter>
         <Routes>
-          <Route index element={<HomePage />} />
-          <Route path='/Datapage' element={<Datapage />} />
+          <Route path='/' element={<HomePage />} />
+          <Route path='/Datapage' element={<Upload />} />
+          <Route path='/Loginpage' element={<Loginpage />} />
         </Routes>
       </BrowserRouter>
     </div>
